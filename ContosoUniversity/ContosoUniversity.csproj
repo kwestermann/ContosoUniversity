@@ -137,8 +137,32 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\201506011554251_InitialCreate.cs" />
+    <Compile Include="Migrations\201506011554251_InitialCreate.Designer.cs">
+      <DependentUpon>201506011554251_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506011722584_InitialCreate1.cs" />
+    <Compile Include="Migrations\201506011722584_InitialCreate1.Designer.cs">
+      <DependentUpon>201506011722584_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506011728093_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\201506011728093_MaxLengthOnNames.Designer.cs">
+      <DependentUpon>201506011728093_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506011734212_ColumnFirstName.cs" />
+    <Compile Include="Migrations\201506011734212_ColumnFirstName.Designer.cs">
+      <DependentUpon>201506011734212_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506011831155_ComplexDataModel.cs" />
+    <Compile Include="Migrations\201506011831155_ComplexDataModel.Designer.cs">
+      <DependentUpon>201506011831155_ComplexDataModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
@@ -195,6 +219,23 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201506011554251_InitialCreate.resx">
+      <DependentUpon>201506011554251_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506011722584_InitialCreate1.resx">
+      <DependentUpon>201506011722584_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506011728093_MaxLengthOnNames.resx">
+      <DependentUpon>201506011728093_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506011734212_ColumnFirstName.resx">
+      <DependentUpon>201506011734212_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506011831155_ComplexDataModel.resx">
+      <DependentUpon>201506011831155_ComplexDataModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
